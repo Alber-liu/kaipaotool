@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 解决：图标等比例居中、禁止拉伸、绝不压扁 -->
+    <link rel="icon" href="logo.png" type="image/png">
+    <style>
+        /* 强制 favicon 等比例渲染，不拉伸 */
+        link[rel="icon"] {
+            object-fit: contain !important;
+            width: 32px !important;
+            height: 32px !important;
+        }
+    </style>
+    <title>KPTool下载</title>
+    <style>
+        body{
+            text-align:center;
+            padding:50px;
+            background:#f5f5f5;
+        }
+        h1{color:#222;}
+        p{color:#666; font-size:16px; margin:20px 0;}
+        .download-btn{
+            display:inline-block;
+            padding:12px 30px;
+            background:#007bff;
+            color:#fff;
+            text-decoration:none;
+            border-radius:6px;
+            font-size:18px;
+            transition: 0.2s;
+        }
+        .download-btn:hover{
+            background:#0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>KaiPaoTool下载</h1>
+    <p>点击下方下载按钮即可下载，一键自动刷环！</p>
+
+    <a href="kptoolsetup.exe" class="download-btn" download>
+        立即下载安装包
+    </a>
+</body>
+</html>
